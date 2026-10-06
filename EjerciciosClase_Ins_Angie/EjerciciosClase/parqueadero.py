@@ -1,3 +1,4 @@
+# Ejemplo (no evaluable) sobre como funciona las clases y funciones 
 import math
 
 class Parqueadero:
@@ -107,10 +108,7 @@ class Parqueadero:
             print(f"{tipo.capitalize()}: ${monto}")
         return recaudo
 
-
-# ==========================================
-# Ejemplo de uso/prueba del programa
-# ==========================================
+# ejemplos de uso
 if __name__ == "__main__":
     # Instanciamos el parqueadero con capacidad para 3 vehículos
     parqueadero = Parqueadero(capacidad_maxima=3)
