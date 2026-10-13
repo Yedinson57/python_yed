@@ -14,7 +14,7 @@ print("-- notas --")
 
 notas = np.array([[3.5, 4.0, 2.2, 5.0],[4.4, 5.0, 3.0, 3.0],[5.0, 3.8, 4.6, 4.0]])
 
-print(notas.mean(axis = 1)) # axis, prom, 1 o 0 para diagonal o vertical
+print(notas.mean(axis = 1)) # axis, prom, 1 o 0 para horizontal o vertical
 print(notas.shape) # conocer la dimension o tamaño de la estructura de datos
 print(notas[0]) # ver fila y posición
 print(notas[:,0]) # ver columna y posicion
