@@ -46,7 +46,7 @@ from sklearn.metrics import accuracy_score
 X = df[["horas_estudio", "asistencia"]]
 y = df["aprobo"]
 
-# Instanciamos y entrenamos el modelo
+# Instanciamos y entrenar el modelo
 modelo = LogisticRegression()
 modelo.fit(X, y)
 
