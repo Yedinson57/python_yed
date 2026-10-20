@@ -14,7 +14,11 @@ y = df["Puede comprar"]
 modelo = DecisionTreeClassifier(random_state=42)
 modelo.fit(x, y)
 
-prediccion = modelo.predict([[80000]])
+dinero = input("cuanto dinero ha gastado: ")
+
+nuevo_cliente = [[dinero]]
+
+prediccion = modelo.predict(nuevo_cliente)
 
 if prediccion [0]==1:
     print("El cliente puede comprar")
