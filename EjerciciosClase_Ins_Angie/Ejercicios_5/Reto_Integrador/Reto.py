@@ -1,10 +1,10 @@
-#  importo json y requests
+# importamos json y requests
 import json
 import requests
 
-# Defino el método para consultar el clima
+# Definimos el método para consultar el clima
 def consultar_clima(lat, lon):
-    # url de la API
+    # Url de la API
     url = "https://api.open-meteo.com/v1/forecast"
     # Parametros de latitud, longitud y las variables metorologicas deseadas(current)
     params = {
