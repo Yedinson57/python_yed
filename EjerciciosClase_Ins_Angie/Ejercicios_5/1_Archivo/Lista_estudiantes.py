@@ -20,3 +20,8 @@ with open("estudiantes.txt","a") as f:
 with open("estudiantes.txt","r") as f:
     lineas = f.readlines() # Cargamos todas las lineas del archivo en una lista de Python
     print(f"Hay {len(lineas)} estudiantes en total.") # Usamos len para saber la cantidad total de elementos
+    
+# Leemos nuevamente el archivo y mostramos la lista con el nuevo agregado
+with open("estudiantes.txt", "r") as f: # "r"/read Abrimos el archivo en modo lectura
+    for i, linea in enumerate(f, start=1):
+        print(f"{i} {linea.strip()}") # .strip() elimina los saltos de linea invisibles al imprimir
